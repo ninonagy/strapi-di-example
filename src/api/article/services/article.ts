@@ -43,8 +43,8 @@ export abstract class BaseService<T extends UID.ContentType> {
     return this.base.update(id, params);
   }
 
-  async delete(params) {
-    return this.base?.find(params);
+  async delete(id, params) {
+    return this.base.delete(id, params);
   }
 }
 
